@@ -4,9 +4,9 @@ import BookItem from "@/components/book-item";
 export default function Page({
   searchParams,
 }: {
-  searchParams: {
+  searchParams: Promise<{
     q?: string;
-  };
+  }>;
 }) {
   return (
     <div>
